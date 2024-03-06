@@ -1,0 +1,119 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+  body {
+    --font-family: "Audiowide", sans-serif;
+    --background-color: #C9CAD9;
+    --primary-color: #160C28;
+    --secondary-color: #4E5283;
+    --tertiary-color: #D1D2F9; 
+    --small-spacing: 0.5rem;
+    --medium-spacing: 1rem;
+    --large-spacing: 2rem;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    text-shadow: 0 0 0.5rem var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  p {
+    font-size: var(--medium-spacing);
+    line-height: 1.5;
+    text-indent: var(--medium-spacing);
+    color: var(--secondary-color)
+  }
+
+  ul {
+    list-style-position: inside;
+    list-style-type: square;
+    color: var(--primary-color);
+  }
+
+  ol {
+    list-style-position: inside;
+    color: var(--primary-color);
+  }
+
+  img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+  }
+
+  img.variation {
+    width: 300px; 
+    height: auto; 
+    border: 2px solid var(--secondary-color); 
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem var(--secondary-color); 
+    display: block;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+    margin: 3px;
+    border: 3px solid var(--primary-color);
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+
+  button:hover{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+  }
+  button:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+
+  button:active {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  
+  button.success {
+    background-color: var(--background-color);
+    color: var(--primary-color)
+  }
+  
+  button.error {
+    background-color: lightcoral;
+    opacity: 0.7;
+    color: var(--primary-color);
+  }
+
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  a:visited{
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+  input[type="text"] {
+    font-family: var(--font-family);
+    font-size: var(--medium-spacing);
+    padding: 0.5rem 0.5rem;
+    border-color: var(--primary-color);
+    border-radius: 0.75rem;
+  }
+  
+
+  
